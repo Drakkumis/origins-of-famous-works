@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Imagens/capa.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+h1 {
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-style: normal;
+    font-size: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 50px;
+}
+
+.conteudo {
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 30px auto;
+}
+
+.img-salsa {
+    float: left;
+    width: 220px;
+    margin: 10px 35px 20px 0;
+}
+
+.img-ram {
+     float: right;
+    width: 210px;
+    margin: 10px 0 20px 25px;
+}
+
+
+h2 {
+    width: 95%;
+    margin: 60px auto 25px;
+    color: #e7c86a;
+    font-size: 34px;
+    font-family: "IM Fell English", serif;
+    border-left: 5px solid #e7c86a;
+    padding-left: 18px;
+}
+
+.card-folclore {
+    width: 95%;
+    margin: 25px auto;
+    padding: 28px 35px;
+
+    background: rgba(45, 45, 90, .82);
+
+    border: 2px solid #e7c86a;
+    border-radius: 18px;
+
+    box-shadow: 0 0 15px rgba(231, 200, 106, .25);
+
+    transition: .3s;
+}
+
+.card-folclore h3 {
+    color: #e7c86a;
+    font-size: 28px;
+    font-family: "IM Fell English", serif;
+    margin-bottom: 18px;
+}
+
+.card-folclore p {
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+section a {
+    color: cornflowerblue;
+}
+
+.botao {
+    width: 250px;
+    height: 45px;
+    margin: 50px auto;
+    /* centraliza */
+
+    background-color: #7b3cff;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #9a68ff;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ccc;
+    font-family: "IM Fell English", serif;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width:600px) {
+
+    html {
+        width: 100%;
+        min-height: 100%;
+        height: auto;
+    }
+
+    body {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        background-image: url('../Imagens/capadois.avif');
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header {
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 1;
+        top: 0;
+        padding: 0 10px;
+    }
+
+    p {
+        width: 97%;
+        font-size: 17px;
+    }
+
+    .img-salsa {
+        width: 165px;
+        float: left;
+        margin: 5px 15px 2px 3px;
+        margin-top: 10px;
+    }
+
+    .img-ram {
+        width: 140px;
+        float: right;
+        margin: 5px 0 1px 12px;
+        margin-top: 8px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .card-folclore {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .card-folclore h3 {
+        font-size: 22px;
+    }
+
+    .card-folclore p {
+        font-size: 17px;
+    }
+}

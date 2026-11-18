@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Imagens/capa.jpg');
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+
+    background-image: url('../Imagens/greco-romana.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "New Rocker", system-ui;
+    font-style: normal;
+    text-shadow:
+        0 0 8px rgba(0, 0, 0, .8),
+        2px 2px 6px rgba(0, 0, 0, .9);
+    line-height: 0.9;
+    position: relative;
+    top: -10px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.ornamento {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+
+    background-image: url("../Imagens/ornamento-grego.png");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.conteudo {
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 30px auto;
+}
+
+h2 {
+    line-height: 1.8;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+    color: #9ee76a;
+    font-family: "IM Fell English", serif;
+}
+
+.img-roma {
+    float: right;
+    width: 260px;
+    margin: 10px 0 20px 25px;
+}
+
+.img-thecreator {
+    float: left;
+    width: 240px;
+    margin: 10px 35px 20px 0;
+}
+
+.img-foice {
+    float: right;
+    width: 380px;
+    margin: 10px 0 20px 25px;
+}
+
+.img-creta {
+    float: left;
+    width: 300px;
+    margin: 10px 35px 20px 0;
+}
+
+.img-deuses {
+    float: right;
+    width: 350px;
+    margin: 10px 0 20px 25px;
+}
+
+.deuses {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.deuses p {
+    margin: 18px 0;
+    line-height: 1.8;
+    color: white;
+    text-align: left;
+}
+
+.deuses strong {
+    font-size: 22px;
+    color: #e7c86a;
+    font-family: "IM Fell English", serif;
+}
+
+.influencia a {
+    color: cornflowerblue;
+}
+
+.botao {
+    width: 250px;
+    height: 45px;
+    margin: 50px auto;
+    /* centraliza */
+
+    background-color: #7b3cff;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #9a68ff;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ccc;
+    font-family: "IM Fell English", serif;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    body {
+        background-image: url('../Imagens/capadois.avif');
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    header {
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 1;
+        top: 0;
+        padding: 0 10px;
+    }
+
+    .ornamento {
+        height: 25px;
+        margin-top: 15px;
+        background-size: auto 25px;
+    }
+
+    .conteudo {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 18px 0;
+        text-align: justify;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin: 25px 0 15px;
+    }
+
+    /* Imagens à direita */
+
+    .img-roma,
+    .img-foice,
+    .img-deuses {
+        float: right;
+        margin: 5px 0 10px 15px;
+        margin-top: 8px;
+    }
+
+    .img-deuses {
+        width: 170px;
+    }
+
+    .img-roma {
+        width: 110px;
+    }
+
+    .img-foice {
+        width: 160px;
+    }
+
+    /* Imagens à esquerda */
+
+    .img-thecreator,
+    .img-creta {
+        float: left;
+        margin: 5px 15px 10px 0;
+        margin-top: 8px;
+    }
+
+    .img-thecreator {
+        width: 120px;
+    }
+
+    .img-creta {
+        width: 200px;
+    }
+
+    .deuses {
+        width: 100%;
+    }
+
+    .deuses strong {
+        font-size: 18px;
+    }
+
+    .botao {
+        width: 90%;
+        max-width: 280px;
+        height: 48px;
+    }
+
+    .botao a {
+        font-size: 16px;
+    }
+
+}

@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Imagens/capa.jpg');
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+header {
+    width: 100%;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    padding: 25px 15px;
+    background-color: rgba(30, 25, 40, 0.9);
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1,
+header p {
+    position: relative;
+    z-index: 1;
+}
+
+
+h1 {
+    color: white;
+    font-size: 57px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "New Rocker", system-ui;
+    font-style: normal;
+    text-shadow:
+        0 0 8px rgba(0, 0, 0, .8),
+        2px 2px 6px rgba(0, 0, 0, .9);
+    line-height: 0.9;
+    position: relative;
+    top: -10px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.descendentes {
+    background-image: url('../Imagens/header-dc.jpg');
+}
+
+.monsterhigh {
+    background-image: url('../Imagens/header-mh.jpg');
+}
+
+.pokemon {
+    background-image: url('../Imagens/header-pokemon.jpg');
+}
+
+.shrek {
+    background-image: url('../Imagens/header-shrek.jpg');
+}
+
+.gatodebotas {
+    background-image: url('../Imagens/gato.jpg');
+}
+
+.lendarios {
+    background-image: url('../Imagens/holu.jpg');
+}
+
+.conteudo {
+    margin: 50px auto 0;
+    width: 95%;
+    max-width: 1000px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 30px auto;
+}
+
+.sla {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    text-shadow: 0 0 10px rgba(232, 205, 127, 0.5);
+    font-size: 20px;
+    color: white;
+    line-height: 1.8;
+    font-weight: 100;
+}
+
+.personagem {
+    display: flow-root;
+    margin: 65px auto;
+}
+
+.personagem h2 {
+    font-size: 30px;
+    color: #f56eec;
+    font-family: "IM Fell English", serif;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.personagem p {
+    margin: 0;
+}
+
+.personagem img {
+    float: right;
+    width: 230px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px 0 15px 25px;
+}
+
+.conteudo a {
+    color: cornflowerblue;
+}
+
+.destaque-extra {
+    margin: 100px auto 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(30, 20, 40, 0.85);
+}
+
+.destaque-extra h2 {
+    color: #f56eec;
+    font-family: "IM Fell English", serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.extra-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.extra-conteudo img {
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.extra-conteudo h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.extra-conteudo p {
+    margin: 0 0 15px;
+}
+
+.extra-conteudo a {
+    color: cornflowerblue;
+}
+
+.botoes {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    width: 250px;
+    height: 45px;
+    margin: 30px 0;
+
+    background-color: #7b3cff;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #9a68ff;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ccc;
+    font-family: "IM Fell English", serif;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    body {
+        background-image: url('../Imagens/capadois.avif');
+        background-attachment: scroll;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    header {
+        height: 120px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 1;
+        top: 0;
+        padding: 0 10px;
+    }
+
+    .ornamento {
+        height: 25px;
+        margin-top: 15px;
+        background-size: auto 25px;
+    }
+
+    .conteudo {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin: 18px 0;
+        text-align: justify;
+    }
+
+    .sla {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .personagem {
+        margin: 45px auto;
+    }
+
+    .personagem h2 {
+        font-size: 22px;
+        margin: 0 0 15px;
+    }
+
+    .personagem p {
+        margin: 0;
+    }
+
+    .personagem img {
+        width: 140px;
+        height: 180px;
+        margin: 10px 0 5px 20px;
+    }
+
+    .botao {
+        width: 90%;
+        max-width: 280px;
+        height: 48px;
+    }
+
+    .botao a {
+        font-size: 16px;
+    }
+
+    .extra-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .extra-conteudo img {
+        width: 180px;
+        height: 220px;
+    }
+}

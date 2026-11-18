@@ -1,0 +1,537 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../Imagens/capa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.capa {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0;
+}
+
+.seta {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: white;
+    animation: pular 1.5s infinite ease-in-out;
+    margin-bottom: 10px;
+}
+
+@keyframes pular {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(12px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.titulao {
+    color: white;
+    font-family: "New Rocker", system-ui;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 140px;
+}
+
+section p {
+    color: white;
+    font-size: 18px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.introducao,
+.mapapc,
+.icones {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.conteudo {
+    width: 100%;
+}
+
+.mapapc {
+    position: relative;
+    width: 900px;
+    display: block;
+}
+
+.mapapc img {
+    width: 100%;
+    display: block;
+    filter: drop-shadow(0 0 20px rgba(225, 225, 225, .4));
+}
+
+.ponto {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.gr {
+    top: 23%;
+    /* quanto maior mais para baixo*/
+    left: 52%;
+    /* quanto maior mais para direita*/
+}
+
+.nd {
+    top: 7%;
+    left: 50%;
+}
+
+.ct {
+    top: 14.5%;
+    left: 44.4%;
+}
+
+.eg {
+    top: 31%;
+    left: 54%;
+}
+
+.hd {
+    top: 32%;
+    left: 67%;
+}
+
+.jp {
+    top: 22%;
+    left: 81%;
+}
+
+.ib {
+    top: 41%;
+    left: 48%;
+}
+
+.ic {
+    top: 47%;
+    left: 24.3%;
+}
+
+.am {
+    top: 49.5%;
+    left: 28.3%;
+}
+
+.at {
+    top: 31%;
+    left: 18.5%;
+}
+
+.it {
+    top: 4%;
+    left: 39%;
+}
+
+.jc {
+    top: 27%;
+    left: 56%;
+}
+
+.ta {
+    top: 24%;
+    left: 73%;
+}
+
+.introducao {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 70px;
+}
+
+main p {
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    background-color: rgb(244, 243, 237);
+    box-shadow: 0 0 25px #7b3cff;
+    border-radius: 15px;
+
+    width: fit-content;
+    padding: 18px 35px;
+    margin: 20px auto;
+    margin-top: 120px;
+}
+
+.icones a {
+    color: #222;
+    font-size: 22px;
+    transition: .3s;
+}
+
+.icones a:hover {
+    color: #7b3cff;
+    transform: scale(1.15);
+}
+
+.constelacao {
+    position: absolute;
+    width: 250px;
+}
+
+.or {
+    width: 17%;
+    top: 35%;
+    left: 5%;
+}
+
+.tr {
+    width: 25%;
+    top: 51%;
+    left: 72%;
+}
+
+.ad {
+    width: 26%;
+    top: 125%;
+    left: 70%;
+}
+
+.um {
+    width: 19%;
+    top: 133%;
+    left: 5.5%;
+}
+
+.cr {
+    width: 16%;
+    top: 215%;
+    left: 5%;
+    opacity: 0.7;
+}
+
+.ep {
+    width: 17.5%;
+    top: 215%;
+    left: 77%;
+    opacity: 0.9;
+}
+
+.globo-mobile {
+    display: none;
+}
+
+.outras-influencias {
+    width: 90%;
+    max-width: 560px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+.textinho {
+    font-size: 20px;
+    color: white;
+    line-height: 1.6;
+    font-weight: 100;
+}
+
+.opcoes-influencias {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.card-influencia {
+    width: 220px;
+    padding: 30px 20px;
+
+    background: rgba(45, 45, 90, 0.8);
+    border: 2px solid #7b3cff;
+    border-radius: 15px;
+
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.card-influencia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #7b3cff;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+footer p {
+    color: #ccc;
+    font-family: "IM Fell English", serif;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 600px) {
+    .titulao {
+        font-size: 32px;
+        margin-top: 90px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .capa {
+        padding-top: 100px;
+        min-height: 100svh;
+        height: 100svh;
+    }
+
+    section p {
+        font-size: 17px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .seta {
+        font-size: 40px;
+        bottom: 20px;
+        margin-bottom: 50px;
+    }
+
+    .constelacao {
+        opacity: .7;
+    }
+
+    .or {
+        width: 130px;
+        top: 380px;
+        left: 20px;
+        opacity: .9;
+    }
+
+    .tr {
+        width: 180px;
+        top: 40px;
+        left: 180px;
+    }
+
+    .ad {
+        display: none;
+    }
+
+    .um {
+        display: none;
+    }
+
+    .cr {
+        display: none;
+    }
+
+    .ep {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .introducao {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    main p {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .mapapc {
+        display: none;
+    }
+
+    .conteudo {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .introducao,
+    .icones {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .icones {
+        width: 80%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .globo-mobile {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .seletor-globo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .globo {
+        position: relative;
+        width: 230px;
+        height: 230px;
+        flex-shrink: 0;
+        overflow: visible;
+    }
+
+    .globo #imagem-globo {
+        width: 230px;
+        height: 230px;
+        max-width: none;
+        object-fit: contain;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: none;
+        transform: none;
+    }
+
+    .pin-globo {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        z-index: 20;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .seletor-globo button {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: none;
+        border-radius: 50%;
+
+        font-family: Arial, sans-serif;
+        font-size: 22px;
+        line-height: 1;
+
+        color: white;
+        background: #7b3cff;
+        cursor: pointer;
+    }
+
+    .mapapc {
+        display: none;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .opcoes-influencias {
+        gap: 12px;
+    }
+
+    .card-influencia {
+        width: 45%;
+        padding: 22px 10px;
+        font-size: 18px;
+    }
+
+    .outras-influencias p {
+        font-size: 17px;
+    }
+}
